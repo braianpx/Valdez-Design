@@ -1,11 +1,13 @@
-import { Link } from 'react-router-dom'
-import Logo from '../../assets/page/icons/logo.svg'
+import { Link, Outlet } from 'react-router-dom'
+import Logo from '../../components/Logo'
 import ArrowDown from '../../assets/page/icons/arrowDown.svg'
 import Save from '../../assets/page/icons/save.svg'
 import YoutubeIcon from '../../assets/page/icons/youtube.svg'
 import InstagramIcon from '../../assets/page/icons/instagram.svg'
 import styles from './index.module.css'
 import FacebookIcon from '../../assets/page/icons/facebook.svg' 
+import SocialIcon from '../../components/SocialIcon'
+import { SocialIconProps } from '../../utils/types'
 
 const productsLinks = [
     {
@@ -17,30 +19,35 @@ const productsLinks = [
         to: '/productos/personalizados'
     }
 ]
+          /* añadir redes sociales */
+const socialNetworksList: Array<SocialIconProps> = [
+    {
+        url:'https://www.instagram.com/',
+        icon: InstagramIcon,
+        alt:'ir a nuestro instagram'
+    },
+    {
+        url:'https://www.youtube.com/',
+        icon: YoutubeIcon,
+        alt:'ir a nuestro youtube'
+    },
+    {
+        url:'https://www.facebook.com/',
+        icon: FacebookIcon,
+        alt:'ir a nuestro facebook'
+    }
+]
 
 const NavBar = () => {
 
-    const redirect  = (url: string) : void  => {
-        window.open(url);
-    }  
-
     return(
-        <div className='h-screen'>
-        <nav className='flex justify-around items-center w-screen'>
-            <div className='flex items-center justify-around'>
-                <img src={Logo} alt='logo of app' className='w-10' />
-                <h1 className='text-lg relative top-1 font-bold text-primary cursor-default'> 
-                    Valdez 
-                    <br />
-                    <span className='relative text-base bottom-3 left-1 text-textPrimary'>
-                        Sublimacion
-                    </span>
-                </h1>
-            </div>
-            <ul className='flex justify-between w-2/6 '>
+        <div className='w-screen h-screen'>
+        <nav className='flex justify-around items-center w-screen h-14 sticky top-0 bg-white'>
+            <Logo isTitlePrimary={true}/>
+            <ul className='flex justify-between w-2/5 xl:w-2/6'>
                 <li className={`text-sm ${styles.navListMove}`}>
                     <Link to='/'>Inicio</Link>
-                    </li>
+                </li>
                 <li className='relative cursor-pointer text-sm' id={styles.dropdown}>          
                     <a className={`flex ${styles.navListMove}`}>
                         Productos 
@@ -57,24 +64,31 @@ const NavBar = () => {
                     </ul>
                 </li>
                 <li className={`flex ${styles.navListMove} text-sm`}>
-                    <Link to='/saves' className='flex'>
+                    <Link to='/guardados' className='flex'>
                         Guardados 
-                        <img className='ms-1' src={Save} alt='save icon'/>
+                        <img className='ms-1' src={Save} alt=''/>
                     </Link> 
                 </li>
                 <li className={`text-sm ${styles.navListMove}`}>
-                    <Link to='/acerca'>Acerca de</Link>
+                    <Link to='/acerca_de'>Acerca de</Link>
                 </li>
                 <li className={`text-sm ${styles.navListMove}`}>
-                    <Link to='/reseñas'>Reseñas</Link>
+                  <a href="">Reseñas</a> 
                 </li>
             </ul>
-            <div className='flex justify-between items-center w-28'>
-                    <img  onClick={()=>redirect('https://www.mercadolibre.com.ar/')} className='cursor-pointer transition-transform duration-200 hover:translate-x-1' src={YoutubeIcon} alt="go to our youtube" />
-                    <img onClick={()=>redirect('https://www.mercadolibre.com.ar/')} className='cursor-pointer transition-transform duration-200 hover:translate-x-1' src={InstagramIcon} alt="go to our instagram" />
-                    <img onClick={()=>redirect('https://www.mercadolibre.com.ar/')} className='cursor-pointer transition-transform duration-200 hover:translate-x-1' src={FacebookIcon} alt="go to our Facebook" />   
+            <div className='flex justify-around items-center w-32'>
+                { 
+                    socialNetworksList.map((el, index) => 
+                        <SocialIcon 
+                        key={index} 
+                        icon={el.icon} 
+                        url={el.url} 
+                        alt={el.alt} />
+                    )
+                 }
             </div>
         </nav>
+        <Outlet />
         </div>
     )
 }
