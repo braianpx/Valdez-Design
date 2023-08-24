@@ -41,8 +41,8 @@ const socialNetworksList: Array<SocialIconProps> = [
 const NavBar = () => {
 
     return(
-        <div className='w-screen h-screen'>
-        <nav className='flex justify-around items-center w-screen h-14 sticky top-0 bg-white'>
+        <>
+        <nav className='flex justify-around items-center w-full h-14 sticky top-0 '>
             <Logo isTitlePrimary={true}/>
             <ul className='flex justify-between w-2/5 xl:w-2/6'>
                 <li className={`text-sm ${styles.navListMove}`}>
@@ -89,7 +89,7 @@ const NavBar = () => {
             </div>
         </nav>
         <Outlet />
-        </div>
+        </>
     )
 }
 
