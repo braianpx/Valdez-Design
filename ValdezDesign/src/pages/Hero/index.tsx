@@ -9,7 +9,7 @@ const descriptionHero = [
 
 const Hero = () => {
     return(
-        <div className='w-full flex items-center mt-32'>
+        <div className='w-full flex items-center mt-20'>
            <div className='w-1/2 flex flex-col items-center gap-12'>
                 <h2 className=' text-5xl font-bold text-black xl:w-full cursor-default w-4/5 text-center'>
                     <span className='text-secondary'>"</span> 
@@ -31,7 +31,7 @@ const Hero = () => {
                         }
                     </ul>
                 </div>
-                <button className='mb-20 hover:translate-x-5 transition-all duration-500 bg-secondary text-white font-normal rounded-md hover:bg-white hover:text-secondary border-2 border-secondary' >Ver Diseños</button>
+                <button className='mb-20 hover:translate-x-5 transition-all duration-500 bg-secondary text-white font-normal rounded-md hover:bg-white hover:text-secondary border-2 border-secondary' >Ver Productos</button>
             </div>
             <div className='h-80 w-1/2 flex justify-center items-center'>
                 <div className={`rounded-full flex justify-center items-center ${styles.divCircle}`}>
