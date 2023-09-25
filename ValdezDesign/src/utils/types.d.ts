@@ -1,5 +1,5 @@
 export interface SocialIconProps {
-    url: string
+    url?: string
     icon: string
     alt: string
 }

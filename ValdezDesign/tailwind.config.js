@@ -14,6 +14,7 @@ module.exports = {
       white: 'white',
       blue: 'blue',
       'semi-white': '#f3f3f3',
+      body: '#D1D5DB',
       'semi-black': '#0000009e',
     },
     extend: {
@@ -27,6 +28,7 @@ module.exports = {
          'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)',
         },
         '30%': { transform: 'translateY(0)',
+        'z-index':'0',
        },
        '50%':{
         transform: 'translateY(-20%)',
@@ -40,6 +42,7 @@ module.exports = {
        },
       '100%': { 
         transform: 'rotate(-12deg)',
+        'z-index':'0',  
         },
       },
       'intermittent-ping': {
@@ -49,6 +52,7 @@ module.exports = {
         },
         '100%': {
           transform:  'translateX(0) scale(1)',
+          'z-index':'0',
           opacity: '1'
         }
       }

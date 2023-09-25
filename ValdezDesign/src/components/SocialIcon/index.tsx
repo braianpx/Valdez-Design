@@ -7,7 +7,7 @@ const SocialIcon = ({url, icon, alt}: SocialIconProps) => {
     }  
     return(
         <img 
-        onClick={()=>redirect(url)} 
+        onClick={()=>redirect(url||'www.facebook.com')} 
         className='cursor-pointer transition-transform duration-300 hover:translate-x-1' 
         src={icon} 
         alt={alt} />   
