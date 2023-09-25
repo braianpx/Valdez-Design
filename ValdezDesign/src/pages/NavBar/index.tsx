@@ -42,7 +42,7 @@ const NavBar = () => {
 
     return(
         <>
-        <nav className='flex justify-around items-center w-full h-14 sticky top-0 bg-white z-10'>
+        <nav className='flex justify-around items-center w-full h-14 fixed top-0 bg-white z-10'>
             <Logo isTitlePrimary={true}/>
             <ul className='flex justify-between w-2/5 xl:w-2/6'>
                 <li className={`text-base ${styles.navListMove}`}>

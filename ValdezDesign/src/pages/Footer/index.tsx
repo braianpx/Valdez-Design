@@ -72,7 +72,7 @@ const footerLinks: Array<FooterLinks> = [
 
 const Footer = () => {
     return(
-        <footer className='w-full bg-black h-96 mt-36 flex justify-around text-body'>        
+        <footer className='w-full bg-black h-96 mt-36 flex justify-around text-body absolute start-0'>        
             <section className='w-2/5 h-full flex flex-col justify-center pb-28 gap-6 ms-16'>
                 <div className='flex flex-col items-center w-1/3 rounded-2xl'>
                     <Logo isTitlePrimary={false} />
