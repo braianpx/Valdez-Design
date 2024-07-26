@@ -6,9 +6,9 @@ import About from './pages/About'
 import Saves from './pages/Saves'
 import Home from './pages/Home'
 import Hero from './pages/Hero'
-import './index.css'
+import ProductsHome from './pages/ProductsHome'
 import Footer from './pages/Footer'
-
+import './index.css'
 const router = createBrowserRouter([
     {
         path:'/',
@@ -20,7 +20,7 @@ const router = createBrowserRouter([
             children: [
               {
                 path:'',
-                element: <Hero />
+                element: [<Hero />, <ProductsHome />]
               }
             ]
           },

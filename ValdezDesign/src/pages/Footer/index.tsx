@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import Logo from "../../components/Logo"
 import NormalIcon from "../../components/NormalIcon"
 import PrecautionIcon from '../../assets/page/icons/precaution.svg'

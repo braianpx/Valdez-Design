@@ -59,16 +59,13 @@ button {
 
 ::-webkit-scrollbar {
   background-color: #EDE9FE;
-  width: 12px; 
+  width:14px;
+  height: 14px;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #C4B5FD;
   border-radius: 10rem;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: #C4B5FD;
 }
 
 

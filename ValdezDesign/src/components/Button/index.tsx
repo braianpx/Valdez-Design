@@ -6,14 +6,15 @@ const buttons = {
 }
 
 export interface Buttons {
- button: 'primary' | 'secondary'
+ button: 'primary' | 'secondary',
+ text: string
 }
 
-const Button = ({button} :Buttons) => {
+const Button = ({button, text} :Buttons) => {
     return(
         <button 
         className={`${buttons.default} ${buttons[button] }`} >
-            Ver Productos
+            {text}
         </button>
     )
 }

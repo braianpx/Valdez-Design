@@ -11,8 +11,8 @@ import { SocialIconProps } from '../../utils/types'
 
 const productsLinks = [
     {
-        name: 'Diseños sublimacion',
-        to: '/productos/disenos'
+        name: 'Ver todos',
+        to: '/productos/todos'
     },
     {
         name: 'Personalizados',
