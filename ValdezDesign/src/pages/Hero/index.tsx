@@ -10,9 +10,9 @@ const descriptionHero = [
 
 const Hero = () => {
     return(
-        <div className='w-screen h-screen flex items-center'>
+        <div className='w-full h-screen flex items-center'>
            <div className='w-1/2 flex flex-col items-center gap-10 justify-center'>
-                <h2 className=' text-5xl font-bold text-black cursor-default text-center'>
+                <h2 className='text-5xl font-bold text-black cursor-default text-center'>
                     <span className='text-secondary'>"</span>
                     Tus <span className='text-secondary'>Cosas</span>, 
                     Tu <span className='text-secondary'>Estilo</span>

@@ -11,7 +11,7 @@ const Logo = ({isTitlePrimary}: Props) => {
             {
                 isTitlePrimary?
                 <h1 className='text-xl relative top-1 font-bold text-primary cursor-default'> 
-                    Herrrera 
+                    Herrera 
                     <br />
                     <span className='relative text-lg bottom-3 left-1 text-textPrimary'>
                         Sublimacion
