@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import Hero from './pages/Hero'
 import ProductsHome from './pages/ProductsHome'
 import Footer from './pages/Footer'
+import Products from './pages/Products'
 import './index.css'
 const router = createBrowserRouter([
     {
@@ -23,6 +24,11 @@ const router = createBrowserRouter([
                 element: [<Hero />, <ProductsHome />]
               }
             ]
+          },
+          {
+            path:'productos',
+            element: <Products />,
+            children: []
           },
           {
             path:'guardados',

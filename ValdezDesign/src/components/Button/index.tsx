@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 const buttons = {
     default:'hover:translate-x-5 transition-all duration-500 font-normal border-2',
@@ -7,15 +8,18 @@ const buttons = {
 
 export interface Buttons {
  button: 'primary' | 'secondary',
- text: string
+ text: string,
+ redirect?: string,
 }
 
-const Button = ({button, text} :Buttons) => {
+const Button = ({button, text, redirect} :Buttons) => {
     return(
-        <button 
-        className={`${buttons.default} ${buttons[button] }`} >
-            {text}
-        </button>
+        <Link to={redirect? redirect : ''}>
+            <button 
+            className={`${buttons.default} ${buttons[button] }`} >
+                {text}
+            </button>
+        </Link>
     )
 }
 
