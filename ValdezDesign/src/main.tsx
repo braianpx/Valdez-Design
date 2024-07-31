@@ -10,6 +10,7 @@ import ProductsHome from './pages/ProductsHome'
 import Footer from './pages/Footer'
 import Products from './pages/Products'
 import './index.css'
+
 const router = createBrowserRouter([
     {
         path:'/',
