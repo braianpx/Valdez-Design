@@ -30,7 +30,7 @@ const Hero = () => {
                         )
                     }
                 </ul>
-                <Button button='primary' text='Ver Productos' redirect='productos' />
+                <Button button='primary' text='Ver Productos' redirect='productos/todos' />
             </div>
             <div className='h-80 w-1/2 flex justify-center items-center'>
                 <div className={`rounded-full flex justify-center items-center ${styles.divCircle}`}>

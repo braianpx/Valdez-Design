@@ -12,7 +12,7 @@ const ProductsHome = () => {
                 <Button button='primary' text='Ver categorias'/>
             </div>
             <div className="w-1/2 h-full flex justify-start items-center">
-                <img src={ImgProductsHome} alt="" className="w-10/12 h-96 object-cover border-dotted border-secondary border-opacity-30 border-2 rounded-md shadow-md" />
+                <img src={ImgProductsHome} alt="" className="w-10/12 h-96 object-cover  border-pastel-purple border-opacity-20 border-2 rounded-md shadow-sm shadow-pastel-purple" />
             </div>
         </div>
     )

@@ -12,7 +12,7 @@ import { SocialIconProps } from '../../utils/types'
 const productsLinks = [
     {
         name: 'Ver todos',
-        to: '/productos/todos'
+        to: `/productos/${'todos'}`
     },
     {
         name: 'Personalizados',
