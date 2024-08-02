@@ -1,13 +1,9 @@
 import { Link, Outlet } from 'react-router-dom'
 import Logo from '../../components/Logo'
-import ArrowDown from '../../assets/page/icons/arrowDown.svg'
-import Save from '../../assets/page/icons/save.svg'
-import YoutubeIcon from '../../assets/page/icons/youtube.svg'
-import InstagramIcon from '../../assets/page/icons/instagram.svg'
 import styles from './index.module.css'
-import FacebookIcon from '../../assets/page/icons/facebook.svg' 
 import SocialIcon from '../../components/SocialIcon'
 import { SocialIconProps } from '../../utils/types'
+import { icons } from '../../utils/icons'
 
 const productsLinks = [
     {
@@ -23,17 +19,17 @@ const productsLinks = [
 const socialNetworksList: Array<SocialIconProps> = [
     {
         url:'https://www.instagram.com/',
-        icon: InstagramIcon,
+        icon: icons.instagram,
         alt:'ir a nuestro instagram'
     },
     {
         url:'https://www.youtube.com/',
-        icon: YoutubeIcon,
+        icon: icons.youtube,
         alt:'ir a nuestro youtube'
     },
     {
         url:'https://www.facebook.com/',
-        icon: FacebookIcon,
+        icon: icons.facebook,
         alt:'ir a nuestro facebook'
     }
 ]
@@ -51,7 +47,7 @@ const NavBar = () => {
                 <li className='relative cursor-pointer text-base' id={styles.dropdown}>          
                     <a className={`flex ${styles.navListMove}`}>
                         Productos 
-                        <img className='ms-1' src={ArrowDown} alt="arrow-down-icon" />
+                        <img className='ms-1' src={icons.arrowDown} alt="arrow-down-icon" />
                     </a>
                     <ul className='hidden absolute top-full left-0 bg-slate-300 p-2.5 cursor-pointer w-52' id={styles.dropdownContent}>
                         {
@@ -66,7 +62,7 @@ const NavBar = () => {
                 <li className={`flex ${styles.navListMove} text-base`}>
                     <Link to='/guardados' className='flex'>
                         Guardados 
-                        <img className='ms-1' src={Save} alt=''/>
+                        <img className='ms-1' src={icons.save} alt=''/>
                     </Link> 
                 </li>
                 <li className={`text-base ${styles.navListMove}`}>
@@ -78,7 +74,7 @@ const NavBar = () => {
             </ul>
             <div className='flex justify-around items-center w-32'>
                 { 
-                    socialNetworksList.map((el, index) => 
+                    socialNetworksList[0] && socialNetworksList?.map((el, index) => 
                         <SocialIcon 
                         key={index} 
                         icon={el.icon} 

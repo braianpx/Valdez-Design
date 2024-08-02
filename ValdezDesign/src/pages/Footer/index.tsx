@@ -1,8 +1,6 @@
-import Logo from "../../components/Logo"
 import NormalIcon from "../../components/NormalIcon"
-import PrecautionIcon from '../../assets/page/icons/precaution.svg'
-import EmailIcon from '../../assets/page/icons/email.svg'
-import WhatsAppIcon from '../../assets/page/icons/whatsApp.svg'
+import { icons } from "../../utils/icons";
+import Logo from "../../components/Logo";
 
 const functionChillona = () : void => {
     console.log('holaaa jejej')
@@ -58,12 +56,12 @@ const footerLinks: Array<FooterLinks> = [
             {
                 linkName:'+ 54 381 192 3293',
                 redirect:'https://wa.me/543812019669?text=Hola, visité su página web y quedé impresionado por los productos sublimados que ofrecen. Tengo algunas preguntas que me gustaría hacerles.',
-                icon: WhatsAppIcon
+                icon: icons.whatsApp
             },
             {
                 linkName:'braivaldez16@gmail.com',
                 redirect:'mailto:braivaldez16@gmail.com',
-                icon: EmailIcon
+                icon: icons.email
             }
         ]
     }
@@ -95,7 +93,7 @@ const Footer = () => {
                                  : 
                                     <li>
                                         <a  className='text-body text-lg font-normal hover:text-body hover:pl-4 hover:pb-3 transition-all duration-300 flex items-center gap-2' href={link.redirect || ''} target='_blank'>
-                                            {typeof link.icon == 'string' && <NormalIcon icon={link.icon || PrecautionIcon} alt=""/> }
+                                            {typeof link.icon == 'string' && <NormalIcon icon={link.icon || icons.precaution} alt=""/> }
                                             {link.linkName}
                                         </a>
                                     </li>

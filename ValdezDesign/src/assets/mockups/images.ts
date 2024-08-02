@@ -1,11 +1,11 @@
-import product1Img from '../../assets/page/taza-hero-2.png';
-import product2Img from '../../assets/page/gorra-hero.png';
+import ImgProduct1 from './productsImages/product-image-1.png';
+import ImgProduct2 from './productsImages/product-image-2.png';
 
 interface Images {
   [key: string] : string
 }
 
-export const images: Images = {
-  'Product 1': product1Img,
-  'Product 2': product2Img,
+export const imagesProducts: Images = {
+  'ImageProduct1': ImgProduct1,
+  'ImageProduct2': ImgProduct2,
 };
