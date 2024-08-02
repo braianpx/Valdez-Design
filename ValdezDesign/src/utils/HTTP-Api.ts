@@ -1,6 +1,6 @@
 //aqui se crean los metodos para traer los datos del mockup
 import Data from "../assets/mockups/Products.json"
-import { imagesProducts } from '../assets/mockups/images.ts'
+import { imagesProducts } from "../assets/mockups/images.ts"
 import { Product } from "./types";
 
 export const getAllProducts = async (): Promise<Product[]> => {

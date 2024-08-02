@@ -23,7 +23,7 @@ const met = async ()  => {
                     <img src={product.image} alt={product.title} />
                     <h2>{product.title}</h2>
                     <p>{product.description}</p>
-                    <p>Categories: {product.categories.join(', ')}</p>
+                    <p>Categories: {product.categories.join(", ")}</p>
                 </li>
                 ))}
             </ul>
