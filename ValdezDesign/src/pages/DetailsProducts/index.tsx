@@ -41,8 +41,8 @@ const DetailsProducts = () => {
                     <img src={utilsImages.house} alt="" className="bg-pastel-purple rounded-full aspect-square w-16"/>
                 </figure>
             </div>
-            <figure className="w-1/2 h-full flex justify-start items-center">
-                <img src={utilsImages.productos} alt="" className="w-10/12 aspect-video object-cover border-pastel-purple border-opacity-20 border-2 rounded-md shadow-sm shadow-pastel-purple" />
+            <figure className="w-1/2 h-full flex justify-center items-center">
+                <img src={utilsImages.productos} alt="" className="w-4/5 aspect-video object-cover border-pastel-purple border-opacity-20 border-2 rounded-md shadow-sm shadow-pastel-purple" />
             </figure >
         </section>
     )
