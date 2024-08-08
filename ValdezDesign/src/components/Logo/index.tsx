@@ -6,8 +6,8 @@ interface Props {
 
 const Logo = ({isTitlePrimary}: Props) => {
     return(
-        <div className="flex items-center justify-around w-36 px-2">
-            <img src={icons.logo} alt="" className={isTitlePrimary?"w-10" : "w-14"} />
+        <div className="flex items-center justify-start w-40">
+            <img src={icons.logo} alt="" className={isTitlePrimary?"w-10" : "xl:w-14 w-11"} />
             {
                 isTitlePrimary?
                 <h1 className="text-xl relative top-1 font-bold text-primary cursor-default"> 
@@ -18,10 +18,10 @@ const Logo = ({isTitlePrimary}: Props) => {
                     </span>
                 </h1>
                 :
-                <p className="text-2xl relative top-1 font-bold text-primary cursor-default text-contorn"> 
+                <p className="xl:text-xl text-lg relative top-1 font-bold text-primary cursor-default text-contorn"> 
                     Herrera 
                     <br />
-                    <span className="relative shadow-white shadow-2xl text-xl bottom-3 left-1 text-textPrimary text-contorn">
+                    <span className="relative shadow-white shadow-2xl text-lg bottom-3 left-1 text-textPrimary text-contorn">
                         Sublimacion
                     </span>
                 </p>
