@@ -127,7 +127,7 @@ const NavBar = () => {
                         </div>
                     </button>
                 </div>
-                <ul className={`h-[92.5%] flex gap-4 flex-col justify-start fixed top-14 right-0 w-3/4 bg-white shadow-md p-4 lg:shadow-none lg:p-0 lg:flex-row lg:justify-center lg:items-center lg:static lg:w-2/5 xl:gap-8
+                <ul className={`h-[92.5%] flex gap-4 flex-col justify-start fixed top-14 right-0 w-3/4 bg-white shadow-md p-4 lg:shadow-none lg:p-0 lg:flex-row lg:justify-center lg:items-center lg:static lg:w-1/2 lx:w-2/5 xl:gap-8
                     ${isMobile?` transition-transform transform ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}`: "" } `}>
                     {linksNav[0] && linksNav?.map(link => (
                         <li 
