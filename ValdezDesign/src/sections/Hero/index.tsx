@@ -9,8 +9,8 @@ const descriptionHero = [
 
 const Hero = () => {
     return(
-        <section className="md:flex-row md:gap-0 md:mt-0 md:h-screen items-center h-[82vh] flex-col-reverse w-screen flex justify-end border-2 gap-4 mt-[5rem]">
-           <div className="md:w-3/5 md:gap-10 md:h-full w-full flex flex-col items-center gap-5 justify-center border-2">
+        <section className="md:flex-row md:gap-0 md:mt-0 md:h-screen md:w-full items-center h-[82vh] flex-col-reverse  flex justify-end gap-4 mt-[5rem]">
+           <div className="md:w-3/5 md:gap-10 md:h-full w-full flex flex-col items-center gap-5 justify-center">
                 <h2 className="lg:text-5xl text-4xl font-bold text-black cursor-default text-center">
                     <span className="text-secondary">"</span>
                     Tus <span className="text-secondary">Cosas</span>, 
