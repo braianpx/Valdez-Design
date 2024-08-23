@@ -117,7 +117,9 @@ const NavBar = () => {
     return (
         <>
             <nav className="flex justify-between w-full h-14 fixed shadow-md top-0 bg-white z-10 items-center px-4 lg:justify-around lg------------------------------------------------------------------------------------..............:px-0">
-                <Logo isTitlePrimary={true} />
+                <Link to={"/"}>
+                    <Logo isTitlePrimary={true} />
+                </Link>
                 <div className="lg:hidden">
                     <button onClick={handleMenuToggle} className="focus:outline-none bg-pastel-purple">
                         <div className="space-y-2">

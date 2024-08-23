@@ -22,7 +22,7 @@ const router = createBrowserRouter([
             children: [
               {
                 path:"",
-                element: [<Hero />, <DetailsProducts />]
+                element: [<Hero />,<DetailsProducts /> ]
               }
             ]
           },

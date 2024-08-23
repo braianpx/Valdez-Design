@@ -16,26 +16,31 @@ const details: string[] = [
 
 const DetailsProducts: React.FC = () => {
     return(
-        <section className="flex flex-row w-full border-y-2 border-dashed border-blue items-center py-10">
-            <div className="flex flex-col w-1/2 h-full gap-7 items-center justify-center">
-                <h2 className="w-11/12 text-4xl font-bold text-black cursor-default">
-                Sobre Nuestros <span className="underline decoration-secondary"> Productos </span>
-                </h2>
-                <ul className="w-5/6">
-                    {
-                        details[0] && details?.map(el => (
-                            <li className="inline-flex items-start justify-start gap-1 my-2">
-                                <NormalIcon icon={icons.check} alt="check"/>
-                                <p className="text-black text-base leading-5"> {el}</p>
-                            </li>
-                        ))
-                    }
-                </ul> 
-                <ProductPath />
+        <section className="flex flex-col w-full border-y-2 border-dashed border-blue items-center py-10 gap-5">
+            <h2 className="w-11/12 lg:text-4xl text-3xl font-bold text-black cursor-default border-2">
+            Sobre Nuestros <span className="underline decoration-secondary"> Productos </span>
+            </h2>
+            <div className="flex lg:flex-row flex-col-reverse">
+                <div className="lg:w-1/2 flex flex-col h-full gap-7 items-center justify-center">
+                    <ul className="lg:w-5/6 w-11/12">
+                        {
+                            details[0] && details?.map(el => (
+                                <li className="my-5">                         
+                                    <p className="text-black text-base leading-4">
+                                        <span className="inline-block align-middle">
+                                            <NormalIcon icon={icons.check} alt="check"/>
+                                        </span>{el}
+                                    </p>
+                                </li>
+                            ))
+                        }
+                    </ul> 
+                    <ProductPath />
+                </div>
+                <figure className="lg:w-1/2 flex justify-center items-center border-2">
+                    <img src={utilsImages.productos} alt="" className="w-4/5 aspect-video object-cover border-pastel-purple border-opacity-20 border-2 rounded-md shadow-sm shadow-pastel-purple" />
+                </figure >
             </div>
-            <figure className="w-1/2 h-full flex justify-center items-center">
-                <img src={utilsImages.productos} alt="" className="w-4/5 aspect-video object-cover border-pastel-purple border-opacity-20 border-2 rounded-md shadow-sm shadow-pastel-purple" />
-            </figure >
         </section>
     )
 }

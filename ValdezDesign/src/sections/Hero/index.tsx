@@ -9,7 +9,7 @@ const descriptionHero = [
 
 const Hero = () => {
     return(
-        <section className="md:flex-row md:gap-0 md:mt-0 md:h-screen md:w-full items-center h-[82vh] flex-col-reverse  flex justify-end gap-4 mt-[5rem]">
+        <section className="md:flex-row md:gap-0 md:mt-0 md:h-screen md:w-full items-center h-[82vh] flex-col-reverse flex justify-end gap-4 mt-[5rem]">
            <div className="md:w-3/5 md:gap-10 md:h-full w-full flex flex-col items-center gap-5 justify-center">
                 <h2 className="lg:text-5xl text-4xl font-bold text-black cursor-default text-center">
                     <span className="text-secondary">"</span>
@@ -31,7 +31,7 @@ const Hero = () => {
                 </ul>
                 <Button button="primary" text="Ver Productos" redirect="productos/todos" />
             </div>
-            <div className="md:h-full md:w-1/2 w-full flex justify-center items-center border-2">
+            <div className="md:h-full md:w-1/2 w-full flex justify-center items-center">
                 <figure className={`lg:h-[25rem] lg:w-[25rem] md:w-[16rem] md:h-[16rem] rounded-full flex justify-center items-center`}>
                     <div className={`xl:h-[25rem] xl:w-[25rem] lg:h-[22rem] lg:w-[22rem] md:w-[16rem] md:h-[16rem] animate-intermittent-ping bg-pastel-purple absolute rounded-full h-52 w-52 ${''}`}></div>
                     <img className="xl:h-[23rem] lg:h-[20rem] md:h-[16rem] animate-down-bounce -rotate-12 -translate-y-full rounded-full h-52 bg-opacity-0 z-20" src={utilsImages.cup} alt="" />
