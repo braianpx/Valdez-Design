@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
 
 const buttons = {
-    default:"hover:translate-x-5 transition-all duration-500 font-normal border-2",
-    primary:"bg-secondary text-white rounded-md hover:bg-white hover:text-secondary border-secondary",
-    secondary:""
+    default:"transition-all duration-500 font-normal border-2 rounded-md",
+    primary:"bg-secondary text-white hover:bg-white hover:text-secondary border-secondary hover:translate-x-5",
+    secondary:"bg-black hover:bg-white text-white hover:text-black text-sm"
 }
 
 interface Buttons {

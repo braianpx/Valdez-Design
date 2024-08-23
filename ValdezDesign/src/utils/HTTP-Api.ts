@@ -14,3 +14,12 @@ export const getAllProducts = async (): Promise<Product[]> => {
     }, 1000);
   });
 };
+
+export const getAllCategories = async (): Promise<string[]> => {
+  const products = await getAllProducts()
+  const categories = products.map(el => el.categories)
+  const flattenedCategories = categories.flat()
+  const separateCategories = flattenedCategories.toString().split(' ').join("").split(',')
+  const filterCategories = [...new Set(separateCategories)];
+  return filterCategories;
+}
