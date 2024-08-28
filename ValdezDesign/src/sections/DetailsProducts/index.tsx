@@ -16,8 +16,8 @@ const details: string[] = [
 
 const DetailsProducts: React.FC = () => {
     return(
-        <section className="flex flex-col w-full border-y-2 border-dashed border-blue items-center py-10 gap-5">
-            <h2 className="w-11/12 lg:text-4xl text-3xl font-bold text-black cursor-default">
+        <section className="sm:py-10 flex flex-col w-full border-y-2 border-dashed border-blue items-center py-5 gap-5">
+            <h2 className="md:text-start text-center w-11/12 lg:text-4xl text-3xl font-bold text-black cursor-default">
             Sobre Nuestros <span className="underline decoration-secondary"> Productos </span>
             </h2>
             <div className="flex lg:flex-row flex-col-reverse">
@@ -35,12 +35,14 @@ const DetailsProducts: React.FC = () => {
                             ))
                         }
                     </ul> 
-                    <ProductPath />
+                    {window.screen.width <= 768   && <ProductPath />}
                 </div>
-                <figure className="lg:w-1/2 flex justify-center items-center">
+                <figure className="sm:my-0 flex-col mb-5 mt-3 lg:w-1/2 flex justify-center items-center gap-8">
                     <img src={utilsImages.productos} alt="" className="w-4/5 aspect-video object-cover border-pastel-purple border-opacity-20 border-2 rounded-md drop-shadow-md" />
+                    {(window.screen.width >= 1024 && window.screen.width < 1440) && <ProductPath />}
                 </figure >
             </div>
+            {window.screen.width >= 1440  && <ProductPath />}
         </section>
     )
 }

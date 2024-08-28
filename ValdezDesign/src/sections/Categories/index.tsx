@@ -14,10 +14,10 @@ useEffect(()=>{
 },[])
 
   return( 
-    <div className="w-vh">
+    <div className="w-vh text-black">
       <h2>Categorias</h2>
       <p>Mira los distintos tipos de productos que tenemos para ti</p>
-      <div className="border-red gap-12 flex flex-wrap justify-center items-center">
+      <div className="gap-12 flex flex-wrap justify-center items-center">
         {categories[0] && categories.map(category => (
           <CategoryCard name={category} link={`/productos/${category}`} img={utilsImages.cup || ''}/>
         ))}
