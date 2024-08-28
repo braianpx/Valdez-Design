@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { getAllCategories } from "../../utils/HTTP-Api"
-import CategoryCard from "../../components/CategoryCard/CategoryCard";
+import CategoryCard from "../../components/CategoryCard/index";
 import { utilsImages } from "../../utils/images";
 
 const Categories: React.FC = () => {
@@ -17,9 +17,11 @@ useEffect(()=>{
     <div className="w-vh">
       <h2>Categorias</h2>
       <p>Mira los distintos tipos de productos que tenemos para ti</p>
-      {categories[0] && categories.map(category => (
-        <CategoryCard name={category} link={`/productos/${category}`} img={utilsImages.cup || ''}/>
-      ))}
+      <div className="border-red gap-12 flex flex-wrap justify-center items-center">
+        {categories[0] && categories.map(category => (
+          <CategoryCard name={category} link={`/productos/${category}`} img={utilsImages.cup || ''}/>
+        ))}
+      </div>
     </div>
   )
 }
