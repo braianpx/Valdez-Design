@@ -53,7 +53,7 @@ const footerLinks: Array<FooterLinks> = [
         titleLinks: "Contacto",
         links:[
             {
-                linkName:"+ 54 381 192 3293",
+                linkName:"+ 54 381 201 9669",
                 redirect:"https://wa.me/543812019669?text=Hola, visité su página web y quedé impresionado por los productos sublimados que ofrecen. Tengo algunas preguntas que me gustaría hacerles.",
                 icon: icons.whatsApp
             },
