@@ -36,6 +36,7 @@ a:hover {
   color: #000000;
 }
 body {
+  background-color: white;
   margin: 0;
   display: flex;
   place-items: center;

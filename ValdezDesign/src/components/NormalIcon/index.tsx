@@ -5,7 +5,8 @@ const NormalIcon = ({icon, alt}: SocialIconProps) => {
     return(
         <img 
         src={icon} 
-        alt={alt} />   
+        alt={alt}
+        />   
     )
 }
 

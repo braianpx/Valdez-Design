@@ -5,9 +5,9 @@ export interface SocialIconProps {
 }
 
 export interface Product{
-    id:number,
-    title:string,
-    description:string,
-    categories:string[],
+    id:number
+    title:string
+    description:string
+    categories:string[]
     image: string
 }

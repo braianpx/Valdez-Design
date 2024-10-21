@@ -3,14 +3,42 @@
     "id":1,
     "title":"Taza starwars Dart veider",
     "description":"Taza de star wars sublimada con el personaje clasico Dart Veider, se vende en tazas plastica o de porcelaa",
-    "categories":["Taza"],
+    "categories":["Tazas"],
     "image":"../../assets/page/taza-hero-2.png"
   },
   {
     "id":2,
     "title":"Gorra random",
     "description":"Gorra super random no de que estara sublimada xd",
-    "categories":["Gorra"],
+    "categories":["Gorras, Tazas"],
+    "image":"../../assets/page/gorra-hero.png"
+  },
+  {
+    "id":3,
+    "title":"Gorra random",
+    "description":"Gorra super random no de que estara sublimada xd",
+    "categories":["Mate"],
+    "image":"../../assets/page/gorra-hero.png"
+  },
+  {
+    "id":4,
+    "title":"Gorra random",
+    "description":"Gorra super random no de que estara sublimada xd",
+    "categories":["Mochilas"],
+    "image":"../../assets/page/gorra-hero.png"
+  },
+  {
+    "id":5,
+    "title":"Gorra random",
+    "description":"Gorra super random no de que estara sublimada xd",
+    "categories":["Porta-telef"],
+    "image":"../../assets/page/gorra-hero.png"
+  },
+  {
+    "id":6,
+    "title":"Gorra random o algo asi",
+    "description":"Gorra super random no de que estara sublimada xd",
+    "categories":["Remeras"],
     "image":"../../assets/page/gorra-hero.png"
   }
 ]

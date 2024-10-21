@@ -9,6 +9,7 @@ import Hero from "./sections/Hero"
 import DetailsProducts from "./sections/DetailsProducts"
 import Footer from "./sections/Footer"
 import Products from "./pages/Products"
+import Categories from "./sections/Categories"
 import "./index.css"
 
 const router = createBrowserRouter([
@@ -22,7 +23,7 @@ const router = createBrowserRouter([
             children: [
               {
                 path:"",
-                element: [<Hero />, <DetailsProducts />]
+                element: [<Hero />,<DetailsProducts />,<Categories /> ]
               }
             ]
           },
