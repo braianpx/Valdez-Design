@@ -2,10 +2,3 @@
 #dropdown:hover #dropdownContent{
     display: block;
 }
-
-.navListMove{
-    transition: transform .5s;
-}
-.navListMove:hover{
-   transform: translate(3px, 0px);
-}

@@ -52,12 +52,6 @@ h1 {
   line-height: 1.1;
 }
 
-button {
-  padding: 0.6em 1.2em;
-  background-color: #1a1a1a;
-  cursor: pointer;
-}
-
 ::-webkit-scrollbar {
   background-color: #EDE9FE;
   width:14px;

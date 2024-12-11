@@ -1,11 +1,12 @@
-import NormalIcon from "../../components/NormalIcon"
+import IconImg from "../../components/Icons/IconImg"
 import { icons } from "../../utils/icons";
 import Logo from "../../components/Logo";
 
+//funcion popup
 const Popup = ( ) : void => {
 }
 
-
+//interfaces
 interface Links {
     linkName: string;
     icon?: string;
@@ -17,7 +18,7 @@ interface FooterLinks {
     links: Array<Links>
 }
 
-
+//array de linnks
 const footerLinks: Array<FooterLinks> = [
     {
         titleLinks:"Siguenos",
@@ -65,7 +66,7 @@ const footerLinks: Array<FooterLinks> = [
         ]
     }
     ]
-
+//componente Footer
 const Footer = () => {
     return(
         <footer className="w-full bg-black lg:h-96 h-auto lg:gap-0 gap-4 mt-2 lg:pt-12 pt-6 flex lg:flex-row flex-col justify-around text-body absolute start-0">        
@@ -90,7 +91,7 @@ const Footer = () => {
                                     : 
                                     <li className="my-2 lg:text-start text-center">
                                         <a className="text-body xl:text-base text-sm font-normal hover:text-body hover:pl-4 hover:pb-3 transition-all duration-300 inline-flex justify-start items-center gap-1" href={link.redirect || ""} target="_blank">
-                                            {typeof link.icon == "string" && <NormalIcon icon={link.icon || icons.precaution} alt=""/> }
+                                            {typeof link.icon == "string" && <IconImg icon={link.icon || icons.precaution} alt=""/> }
                                             {link.linkName}
                                         </a>
                                     </li>

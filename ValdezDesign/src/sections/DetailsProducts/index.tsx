@@ -1,4 +1,4 @@
-import NormalIcon from "../../components/NormalIcon"
+import IconImg from "../../components/Icons/IconImg"
 import React from "react"
 import { utilsImages } from "../../utils/images"
 import { icons } from "../../utils/icons"
@@ -28,7 +28,7 @@ const DetailsProducts: React.FC = () => {
                                 <li className="my-5">                         
                                     <p className="text-black text-base leading-4">
                                         <span className="inline-block align-middle">
-                                            <NormalIcon icon={icons.check} alt="check"/>
+                                            <IconImg icon={icons.check} alt="check"/>
                                         </span>{el}
                                     </p>
                                 </li>
