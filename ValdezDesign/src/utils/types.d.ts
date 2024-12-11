@@ -2,6 +2,7 @@ export interface SocialIconProps {
     url?: string
     icon: string
     alt: string
+    syles?: string
 }
 
 export interface Product{
