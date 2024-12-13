@@ -113,13 +113,13 @@ const NavBar = () => {
                     <ul
                       className={`${
                         isMobile && menuProductsOpen ? "block" : "hidden"
-                      } lg:absolute lg:top-full left-0 bg-slate-300 p-2.5 cursor-pointer md:w-40 rounded-e-full bg-white shadow-md`}
+                      } lg:absolute lg:top-full left-0 p-2.5 cursor-pointer md:w-40 rounded-e-full bg-white shadow-md`}
                       id={styles.dropdownContent}
                     >
                       {link?.extraLinks?.map((extralink, i) => (
                         <li
                           key={i}
-                          className="md:text-base text-2xl hover:ms-3 hover:mb-1 transition-all duration-250"
+                          className="md:text-base text-2xl hover:ms-3 hover:mb-1 transition-all duration-250 py-1"
                         >
                           <Link
                             to={extralink.to}

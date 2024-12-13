@@ -3,7 +3,7 @@ import { utilsImages } from "../../utils/images"
 
 const ProductPath: React.FC  = () => {
   return(
-      <figure className="xl:w-2/5 lg:w-[85%] md:w-2/3 w-11/12 inline-flex items-center">
+      <figure className="xl:w-2/5 lg:w-[85%] md:w-2/3 w-11/12 inline-flex items-center border-y-2">
         <img src={utilsImages.whiteCup} alt="" className="md:w-[3.8rem] bg-pastel-purple rounded-full border-2 border-solid aspect-square w-[3.4rem] border-tertiary" />
         <div className="border-b-2 border-solid border-tertiary w-1/2 mx-1.5"></div>
         <img src={utilsImages.cup} alt="" className="md:w-[3.8rem] bg-pastel-purple rounded-full aspect-square w-[3.4rem] border-2 border-solid border-tertiary"/>
