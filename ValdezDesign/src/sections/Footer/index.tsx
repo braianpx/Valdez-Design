@@ -84,7 +84,9 @@ const Footer = () => {
                             footerLinks[i]?.links.map(link => {
                                 return link.switchSelect?
                                     <li className="my-2 lg:text-start text-center">
-                                        <button className="text-body lg:text-start xl:text-base  text-sm bg-transparent font-normal p-0 hover:text-body hover:pl-4 hover:pb-3 transition-all duration-300" onClick={()=>{ link.switchSelect && link.switchSelect(link.linkName)}}>
+                                        <button 
+                                            className="text-body lg:text-start xl:text-base  text-sm bg-transparent font-normal p-0 hover:text-body hover:pl-4 hover:pb-3 transition-all duration-300" 
+                                            onClick={()=>{ link?.switchSelect && link.switchSelect(link.linkName)}}>
                                             {link.linkName}
                                         </button>
                                     </li>

@@ -29,7 +29,7 @@ const Hero = () => {
                         )
                     }
                 </ul>
-                <Button button="primary" text="Ver Productos" redirect="productos/todos" />
+                <Button isLink button="primary" text="Ver Productos" redirect="productos/todos" />
             </div>
             <div className="md:h-full md:w-1/2 w-full flex justify-center items-center">
                 <figure className={`lg:h-[25rem] lg:w-[25rem] md:w-[16rem] md:h-[16rem] rounded-full flex justify-center items-center`}>
