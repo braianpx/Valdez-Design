@@ -1,9 +1,7 @@
-import IconImg from "../../components/Icons/IconImg"
 import React from "react"
 import { utilsImages } from "../../utils/images"
-import { icons } from "../../utils/icons"
 import ProductPath from "../../components/ProductPath"
-import Pointer from "./Pointer"
+import Pointer from "../../components/Pointer"
 
 interface detailProducts {
     name: string;
@@ -35,7 +33,7 @@ const details: Array<detailProducts> = [
 
 const DetailsProducts: React.FC = () => {
     return(
-        <section className="sm:py-10 flex flex-col w-full border-y-2 border-dashed border-blue items-center py-5 gap-5">
+        <section className="sm:py-10 flex flex-col w-full border-y-2 border-dashed border-blue items-center pt-5 pb-2 gap-5">
             <h2 className="md:text-start text-center w-11/12 lg:text-4xl text-3xl font-bold text-black">
             ¿Qué <span className="underline decoration-secondary">Ofrecemos</span><span className="text-secondary">? </span>
             </h2>
