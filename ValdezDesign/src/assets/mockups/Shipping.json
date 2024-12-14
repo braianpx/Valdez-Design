@@ -1,0 +1,15 @@
+{
+  "shipping": {
+        "available_countries": [
+          {
+            "country":"Argentina",
+             "provinces":[
+              {
+                "province":"Tucumán",
+                "cities":["San Miguel De Tucumán"]
+              }
+            ]
+          }
+        ]
+    }
+  }
