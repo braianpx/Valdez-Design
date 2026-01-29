@@ -6,7 +6,7 @@ import { Product } from "./types";
 export const getAllProducts = async (): Promise<Product[]> => {
   return new Promise((resolve) => {
     const products = Data.map(el => {
-      el.image = imagesProducts[`ImageProduct${el.id}`] || el.image 
+      el.images = imagesProducts[`ImageProduct${el.id}`] || el.images
       return el
     })
     setTimeout(() => {
