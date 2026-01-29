@@ -16,10 +16,15 @@ export const getAllProducts = async (): Promise<Product[]> => {
 };
 
 export const getAllCategories = async (): Promise<string[]> => {
-  const products = await getAllProducts()
-  const categories = products.map(el => el.categories)
-  const flattenedCategories = categories.flat()
-  const separateCategories = flattenedCategories.toString().split(' ').join("").split(',')
-  const filterCategories = [...new Set(separateCategories)];
-  return filterCategories;
-}
+  const products = await getAllProducts();
+  // Obtener todas las categorías, separando aquellas que están en un mismo array
+  const allCategories = products.flatMap((product) => 
+    product.categories.flatMap((category) => category.split(","))
+  );
+  // Limpiar categorías (eliminar espacios innecesarios) y eliminar duplicados
+  const uniqueCategories = Array.from(
+    new Set(allCategories.map((category) => category.trim()))
+  );
+  return uniqueCategories;
+};
+

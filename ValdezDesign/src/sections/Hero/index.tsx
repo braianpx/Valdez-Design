@@ -19,7 +19,7 @@ const Hero = () => {
                     <br />
                      Articulos <span className="underline decoration-secondary"> Sublimados </span>
                 </h2>
-                <ul className="2xl:w-[67%] xl:w-[70%] w-[85%] xl:ms-10 lg:mb-16 mb-8 ms-4 list-disc text-secondary list-outside">
+                <ul className="2xl:w-[62%] xl:w-[70%] w-[85%] xl:ms-10 lg:mb-16 mb-8 ms-4 list-disc text-secondary list-outside">
                     {   descriptionHero?.map(text =>
                         <li className="my-0.5">
                             <span className="text-black text-base">
@@ -29,7 +29,7 @@ const Hero = () => {
                         )
                     }
                 </ul>
-                <Button button="primary" text="Ver Productos" redirect="productos/todos" />
+                <Button isLink button="primary" text="Ver Productos" redirect="productos/todos" />
             </div>
             <div className="md:h-full md:w-1/2 w-full flex justify-center items-center">
                 <figure className={`lg:h-[25rem] lg:w-[25rem] md:w-[16rem] md:h-[16rem] rounded-full flex justify-center items-center`}>
@@ -40,4 +40,4 @@ const Hero = () => {
         </section>
     )
 }
-export default Hero
+export default Hero;
